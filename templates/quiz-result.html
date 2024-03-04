@@ -1,0 +1,11 @@
+{% extends "layout.html"%} {% block body %}
+
+<h1>Quiz Result</h1>
+<p>Score on Math Quiz: {{ math_score }} / 5</p>
+<p>Score on Python QUiz: {{ python_score }} / 5</p>
+<p>Overall Score: {{ math_score + python_score }}</p>
+<p>Percentage Score: {{ percentage_score }}%</p>
+
+<a href="/">Go back to Home Page</a>
+
+{% endblock %}

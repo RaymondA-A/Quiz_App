@@ -1,0 +1,15 @@
+{% extends "layout.html"%} {% block body %}
+
+<h1>Quiz on Basic Mathematics</h1>
+<form method="post" action="/quiz/math/">
+  {% for name, question, answers in questions %}
+  <p>{{ name[-1] }}. {{ question }}</p>
+  {% for answer in answers %}
+  <input type="radio" name="{{ name }}" value="{{ answer }}" required /> {{
+  answer }}<br >
+  {% endfor %} {% endfor %}
+  <br >
+  <input type="submit" value="Finish Math Quiz" />
+</form>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %} {% block title %} Start Game {% endblock %} {% block
+body %}
+<img
+  src="{{url_for('static', filename='images/landing-page-image.jpg')}}"
+  alt="quiz image"
+/>
+
+<div class="text-content">
+  <div class="content-wrapper">
+    <h1>Welcome to your one-stop Quiz Portal</h1>
+    <p>You will be quizzed on basic mathematics and Python.</p>
+    <p>
+      The quiz is in two sessions. A quiz on basic mathematics and another on
+      basic Python.
+    </p>
+    <p>
+      Each session constitutes five questions with a score of 1 for each
+      correctly answered question.
+    </p>
+    <p>
+      At the end of the quiz, you will be graded out of an overall score of 10
+      marks
+    </p>
+    <div class="btn-wrapper">
+      <button
+        type="button"
+        onclick="window.location.href='{{url_for('math_quiz_get')}}'"
+      >
+        Get Started!!!
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}

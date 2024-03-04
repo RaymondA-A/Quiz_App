@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+img {
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+.text-content {
+  position: absolute;
+  top: 5%;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+.content-wrapper h1 {
+  margin: 0.2rem 0;
+  font-size: 40px;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  margin-top: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+}
